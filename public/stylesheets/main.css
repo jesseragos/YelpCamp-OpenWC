@@ -1,0 +1,39 @@
+body {
+  background: #fff;
+  padding-top: 70px; /* To apply fixed top navbar */
+}
+
+.thumbnail img {
+  width: 100%;
+}
+
+.thumbnail {
+  padding: 0;
+}
+
+.thumbnail .caption-full {
+  padding: 9px;
+}
+
+.delete-form {
+  display: inline;
+}
+
+.btn-primary {
+  background-color: #30ad35;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #118d15 !important;
+}
+
+.navbar-default {
+  background-color: #e8e8e8;
+}
+
+.jumbotron {
+  color: #fff;
+  background-color: #bdb58a;
+  text-align: center;
+}
