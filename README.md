@@ -1,3 +1,6 @@
+## UPDATE
+A Yelp clone web application for camping enthusiasts.
+___________
 # YelpCamp
 A Yelp clone web application for camping enthusiasts.
 
@@ -17,7 +20,11 @@ DATABASEURL=yourDatabaseURL
 ```
 You can change the values of the other variables as you wish but insure that it will reflect with the setup in later steps.
 
-3. Run `npm install` to download all dependencies from package.json.
+3. Run `yarn install` to download all dependencies from package.json for the server.
+3. Run `yarn run client-install` to download all dependencies for the client.
 4. For those using MongoDB cloud service, refer to step 2 above *OR* set the URL in environment variables with this command: 'export DATABASEURL = yourDatabaseURL'. If local setup, database URL will default to `mongodb://localhost/yelp_camp` if DATABASEURL variable is not provided.
-5. Run `npm start`.
-6. Visit the app in a browser with URL of `localhost:3000` (3000 is the set port so update this if there is change in the PORT value. Also check IP if there were conflicts encountered).
+5. To start app:
+  - `yarn run start` - start server
+  - `yarn run server` - start server with nodemon
+  - `yarn run client` - start open-wc client server
+  - `yarn run dev` - start both server and client
