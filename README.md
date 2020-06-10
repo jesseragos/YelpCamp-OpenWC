@@ -1,5 +1,8 @@
-## UPDATE
-A Yelp clone web application for camping enthusiasts.
+## IN PROGRESS
+- Setup on connecting login POST route for login action in front-end by passing FormData as body for fetch request.
+- Ongoing: Further learn and research about proper setup for 
+  - RESTful API routes to be updated for the server codes
+  - Redux setup for open-wc
 ___________
 # YelpCamp
 A Yelp clone web application for camping enthusiasts.
