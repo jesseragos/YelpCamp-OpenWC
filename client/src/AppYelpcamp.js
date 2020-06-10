@@ -1,6 +1,7 @@
 import { LitElement, html, css } from 'lit-element';
-import { openWcLogo } from './open-wc-logo.js';
-import './components/demo-feat-connected';
+import './components/list/campgrounds-list-connected';
+import './components/form/campgrounds-form';
+import './components/form/login-form';
 
 export class AppYelpcamp extends LitElement {
   static get properties() {
@@ -56,33 +57,11 @@ export class AppYelpcamp extends LitElement {
 
   render() {
     return html`
-      <main>
-        <div class="logo">${openWcLogo}</div>
-        <h1>My app</h1>
-
-        <p>Edit <code>src/AppYelpcamp.js</code> and save to reload.</p>
-        <a
-          class="app-link"
-          href="https://open-wc.org/developing/#code-examples"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Code examples
-        </a>
-      </main>
-
-      <p class="app-footer">
-        🚽 Made with love by
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://github.com/open-wc"
-          >open-wc</a
-        >.
-      </p>
-
-      <demo-feat-connected></demo-feat-connected>
-      
+      <login-form></login-form>
+      <hr />
+      <campgrounds-form></campgrounds-form>
+      <hr />
+      <campgrounds-list-connected></campgrounds-list-connected>
     `;
   }
 }
